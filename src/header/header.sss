@@ -1,0 +1,35 @@
+header
+  padding: var(--space) 0
+
+  border-bottom: 1px solid var(--rullerColor)
+
+  nav
+    display: grid
+    grid-gap: 1.5rem
+    grid-template-columns: 1fr 5fr
+
+    ul
+      display: inline-block
+      margin: 0
+      padding: 0
+
+      &:first-child li a
+        color: var(--foregroundColorLightest)
+
+        pointer-events: none
+
+        &:focus
+          color: var(--hoverColor)
+
+      &:last-child li:last-child
+        padding-right: 0
+
+      li
+        display: inline-block
+        padding-right: var(--space)
+
+        list-style-type: none
+
+@mixin mobile
+  header nav
+    justify-items: end
