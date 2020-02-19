@@ -1,9 +1,7 @@
 section.content
   margin-bottom: calc(1.5rem + (2 * var(--space)))
-  section.road h2
-    border-bottom: 1px solid var(--rullerColor)
     
-  section.auto table
+  table
     width: 100%
     margin-bottom: calc(3 * var(--space))
 
@@ -14,28 +12,12 @@ section.content
 
       td
         padding-top: var(--space)
-        padding-bottom: calc(2 * var(--space))
+        padding-bottom: var(--space)
 
         vertical-align: top
 
         &:first-child
-          width: 80px
+          width: 55px
           padding-right: var(--space)
 
           text-transform: uppercase
-
-        ul
-          margin: 0
-          padding-left: 2rem
-
-          li:not(:last-child)
-            margin-bottom: 0.25rem
-
-@mixin desktop
-  section.content section.auto
-    display: grid
-    grid-gap: 1.5rem
-    grid-template-columns: 1fr 5fr
-
-  section.content section.auto table:first-of-type tr:first-of-type
-    border-top: 0

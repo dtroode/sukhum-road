@@ -2,22 +2,14 @@ include content-db.pug
 
 mixin table(list)
   section.content
-    section.road
+    each auto in list
       h2
-        | !{list.head}
-    section.auto
-      each auto in list.body
-        h2
-          | !{auto.auto_name}
-        table
-          each row in auto.auto_list
-            tr
+        | !{auto.auto_name}
+      table
+        each row in auto.auto_list
+          tr
+            each element in row
               td
-                | !{row.number}
-              td
-                ul
-                  each el in row.char
-                    li
-                      | !{el}
+                | !{element}
 
-+table(first_route)
++table(list)
