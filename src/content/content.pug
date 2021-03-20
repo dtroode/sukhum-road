@@ -5,11 +5,11 @@ mixin table(list)
     each auto in list
       h2
         | !{auto.auto_name}
-      table
+      section
         each row in auto.auto_list
-          tr
+          article
             each element in row
-              td
+              span
                 | !{element}
 
 +table(list)

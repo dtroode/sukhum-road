@@ -5,6 +5,7 @@
   --foregroundColorLight: #2c2c2e
   --hoverColor: #c93923
   --rullerColor: rgba(0, 0, 0, 0.125)
+  --backgroundHoverColor: rgba(0, 0, 0, 0.0625)
   --rullerHoverColor: rgba(201, 57, 35, 0.125)
 
   /* Padding and margin value */
@@ -16,6 +17,7 @@
     --foregroundColor: #f9f8f1
     --foregroundColorLight: #eeeeee
     --rullerColor: rgba(242, 242, 247, 0.25)
+    --backgroundHoverColor: rgba(242, 242, 247, 0.125)
     --rullerHoverColor: rgba(201, 57, 35, 0.5)
 
 *::selection
@@ -27,18 +29,18 @@ html
   font-size: 14px
 
 body
-  max-width: 1000px
+  max-width: 1200px
   margin: 0 auto
   padding: 0 1rem
 
   background-color: var(--backgroundColor)
 
-h2, p, a, table
+h2, p, a, span
   font-size: 1rem
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   line-height: 1.5em
 
-p, a, table
+p, a, span
   color: var(--foregroundColorLight)
   font-weight: normal
 
@@ -46,7 +48,7 @@ h1, h2
   color: var(--foregroundColor)
 
 h1
-  margin: calc(4 * var(--space)) 0 calc(2 * var(--space)) -1.5px
+  margin: 4rem 0 2rem -1.5px
 
   font-weight: normal
 
@@ -56,15 +58,9 @@ h1
   line-height: 1.05em
 
 h2 
-  padding: var(--space) 0
+  margin: 1rem 0
 
   text-transform: uppercase
-
-  &:first-child
-    margin: 0
-
-  &:not(:first-child)
-    margin: calc(3 * var(--space)) 0 0 0
 
 p
   margin: 1rem 0

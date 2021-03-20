@@ -1,22 +1,20 @@
 section.content
-  margin-bottom: calc(1.5rem + (2 * var(--space)))
-    
-  table
-    width: 100%
+  margin-bottom: 3rem
+  
+  section
+    margin-bottom: 4rem
 
-    border-collapse: collapse
+    article
+      padding: 1rem
 
-    tr
-      border-top: 1px solid var(--rullerColor)
+      border-radius: 0.25rem
 
-      td
-        padding-top: var(--space)
-        padding-bottom: var(--space)
+      &:hover
+        background-color: var(--backgroundHoverColor)
 
-        vertical-align: top
+      span
+        display: block
 
         &:first-child
-          width: 55px
-          padding-right: var(--space)
-
+          font-weight: bold
           text-transform: uppercase
