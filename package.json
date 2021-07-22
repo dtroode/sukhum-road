@@ -15,7 +15,7 @@
     "lint": "stylelint src/*/*.sss --fix",
     "clean": "rm -rf dist/",
     "build": "parcel build src/index.pug -d build",
-    "deploy": "npm run lint && npm run build && cd build && now --prod"
+    "deploy": "npm run lint && npm run build && cd build && vercel --prod"
   },
   "version": "1.0.0",
   "devDependencies": {
